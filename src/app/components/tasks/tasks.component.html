@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-header">Task List</div>
+  <div class="card-body">
+
+    <div>
+      <div class="list-group">
+        <app-task-item *ngFor="let task of tasks; let i=index" [task]="task" [index]="i" (taskDelete)="onReceivedDelete($event)"></app-task-item>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
